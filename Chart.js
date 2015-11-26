@@ -2138,7 +2138,7 @@
 						label : data.labels[index],
 						datasetLabel: dataset.label,
 						strokeColor : dataset.strokeColor,
-						fillColor : dataset.fillColor,
+						fillColor : dataset.fillColor[index],
 						highlightFill : dataset.highlightFill || dataset.fillColor,
 						highlightStroke : dataset.highlightStroke || dataset.strokeColor
 					}));
