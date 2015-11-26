@@ -2137,8 +2137,8 @@
 						value : dataPoint,
 						label : data.labels[index],
 						datasetLabel: dataset.label,
-						strokeColor : dataset.strokeColor,
-						fillColor : dataset.fillColor[index],
+						strokeColor : dataset.strokeColor[index] || dataset.strokeColor,
+						fillColor : dataset.fillColor[index] || dataset.fillColor,
 						highlightFill : dataset.highlightFill || dataset.fillColor,
 						highlightStroke : dataset.highlightStroke || dataset.strokeColor
 					}));
