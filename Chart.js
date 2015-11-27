@@ -2349,8 +2349,8 @@
 						value : dataPoint,
 						label : data.labels[index],
 						datasetLabel: dataset.label,
-						strokeColor : dataset.strokeColor[index] || dataset.strokeColor,
-						fillColor : dataset.fillColor[index] || dataset.fillColor,
+						strokeColor : angular.isArray(dataset.strokeColor) ? dataset.strokeColor[index] : dataset.strokeColor,
+						fillColor : angular.isArray(dataset.fillColor) ? dataset.fillColor[index] : dataset.fillColor,
 						highlightFill : dataset.highlightFill || dataset.fillColor,
 						highlightStroke : dataset.highlightStroke || dataset.strokeColor
 					}));
